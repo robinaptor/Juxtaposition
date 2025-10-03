@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Juxtaposition</title>
+
+	<style>
+		/* Typo */
+		@import url('https://fonts.cdnfonts.com/css/pilowlava');
+		body { font-family:"pilowlava";}
+		
+		body {
+			margin: 0;
+			min-height: 100vh;
+			display: flex;
+		}
+		div {
+			flex: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		/* Bling */
+		div {font-size: 5vw;}
+		#G {background-color: aliceblue;}
+		#D {background-color: bisque;}
+
+		@media (orientation: portrait) {
+			body {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="G">tracteur</div>
+	<div id="D">bleu</div>
+	
+</body>
+</html>
+
+
